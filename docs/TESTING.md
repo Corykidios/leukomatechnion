@@ -53,7 +53,8 @@ checkpoint wedge (the touch worked instantly):
 | Mirror check (page context) | PASS | Page identity confirmed before acting |
 | Post as page (public) | PASS | Two-step flow: compose -> Next -> Post; verified rendered on page |
 | Page "Share a thought" = NOTE, not post | PASS (quirk documented) | Opens a "New note" composer (60-char limit, Share button) — NOT the public-post flow; the public post lives behind the "Create N public posts" onboarding checklist item |
-| Comment/react as page | UNTESTED | Needs a second party's comment to reply to (next test) |
+| Comment as page (reply to human) | PASS | 2026-10-15: replied to the account owner's comment in character ("Comment as Pogo Porropogon" box; insertText + Enter; grep-verified) |
+| Outside-viewer rendering | PASS | Account owner's comment + Pogo's reply both render on the public page view |
 | Page inbox | UNTESTED | Needs a second party to message the page |
 | Page in group | UNTESTED | Requires group "allow pages" setting check |
 
