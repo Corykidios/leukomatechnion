@@ -43,13 +43,18 @@ Validated live 2026-10-14 to 2026-10-15 (two-day session, profile
 
 ## facebook-page
 
+Validated live 2026-10-15 (~00:45-01:10 UTC), after human cleared the
+checkpoint wedge (the touch worked instantly):
+
 | Technique | Status | Notes |
 |---|---|---|
-| Page public rendering | PASS | Public fetch 2026-10-15 (Pogo Porropogon, id 61595191331527) |
-| Page-switch flow | UNTESTED | First live session TODO; selectors to be inventoried |
-| Post as page | UNTESTED | |
-| Comment/react as page | UNTESTED | |
-| Page inbox | UNTESTED | |
+| Page public rendering | PASS | Public fetch + logged-in view (Pogo Porropogon, id 61595191331527) |
+| Page-switch flow | PASS | "Switch Now" button on the page; verified by Manage Page header + page-context composer after switch |
+| Mirror check (page context) | PASS | Page identity confirmed before acting |
+| Post as page (public) | PASS | Two-step flow: compose -> Next -> Post; verified rendered on page |
+| Page "Share a thought" = NOTE, not post | PASS (quirk documented) | Opens a "New note" composer (60-char limit, Share button) — NOT the public-post flow; the public post lives behind the "Create N public posts" onboarding checklist item |
+| Comment/react as page | UNTESTED | Needs a second party's comment to reply to (next test) |
+| Page inbox | UNTESTED | Needs a second party to message the page |
 | Page in group | UNTESTED | Requires group "allow pages" setting check |
 
 ## Blockers

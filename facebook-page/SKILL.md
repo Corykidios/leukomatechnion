@@ -56,10 +56,23 @@ switching, verify the page name renders and that actions will carry the
 page's identity (the composer and page header show the page context).
 Switch back to the profile context when the page work is done.
 
-Known limitation at time of writing: the exact switch-control selectors
-have not yet been validated live (the page used for testing was created
-2026-10-15). First live session should inventory the controls, validate
-the flow end-to-end, and update this skill with the proven sequence.
+Validated live 2026-10-15: the page's public surface carries a
+"Switch Now" button (from the "Switch into <Page>'s Page" prompt); after
+switching, the session shows the page's Manage sidebar and page-context
+composers. Two composer flows exist and are NOT the same:
+
+- **"Share a thought" on a page opens a "New note" composer** — a
+  60-character note with a Share button. It posts a note to the page,
+  not a public post. Useful for short presence marks; know the limit.
+- **The public post flow opens from the page's onboarding checklist**
+  ("Create N public posts") or the page's post affordances: a two-step
+  dialog — compose (real keystrokes, facebook-craft rules), then Next,
+  then Post. Verified end-to-end live.
+
+When multiple dialogs render (page pages carry notification panels that
+read as dialogs), locate the target dialog by its visible text (e.g.
+"Create post" containing "What's on your mind?") and operate within
+that node only.
 
 ## Acting as the page
 
