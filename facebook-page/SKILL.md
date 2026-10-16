@@ -110,15 +110,22 @@ group's admins.
 
 ## Testing checklist
 
-Page existence and public rendering (title, redirect to /people/<name>):
-PASS (validated via public fetch 2026-10-15, Pogo Porropogon page,
-id 61595191331527). Page-switch flow: UNTESTED. Posting as page:
-UNTESTED. Commenting as page: UNTESTED. Page inbox: UNTESTED.
-Group participation as page: UNTESTED (requires group setting check).
-These are the first-live-session TODOs, in order.
+All validated live 2026-10-15 against the Pogo Porropogon page (the
+crew's test hull):
+
+- Page existence and public rendering: PASS (public fetch + logged-in)
+- Page-switch flow ("Switch Now"): PASS
+- Public post as page (two-step compose -> Next -> Post): PASS
+- Note vs post composer distinction: PASS (quirk documented above)
+- Comment as page (in-character reply to a human comment): PASS
+- Page inbox (Meta Business Suite) read + reply: PASS
+- Page joins a private group (after "allow pages" enabled + approval): PASS
+
+Remaining known quirks (not page-specific): reaction swaps and share
+sheets under synthetic clicks; see facebook-craft.
 
 ## Provenance
 
-Written 2026-10-15 against the Pogo Porropogon page (the crew's test
-hull). Live validation of the UNTESTED items is the skill's first task
-once the profile session is available.
+Written 2026-10-15, validated live the same night against the Pogo
+Porropogon page (profile id 61595191331527), including a full
+press-conference exchange with the account owner in the page inbox.

@@ -55,16 +55,16 @@ checkpoint wedge (the touch worked instantly):
 | Page "Share a thought" = NOTE, not post | PASS (quirk documented) | Opens a "New note" composer (60-char limit, Share button) — NOT the public-post flow; the public post lives behind the "Create N public posts" onboarding checklist item |
 | Comment as page (reply to human) | PASS | 2026-10-15: replied to the account owner's comment in character ("Comment as Pogo Porropogon" box; insertText + Enter; grep-verified) |
 | Outside-viewer rendering | PASS | Account owner's comment + Pogo's reply both render on the public page view |
-| Page inbox | UNTESTED | Needs a second party to message the page |
-| Page in group | UNTESTED | Requires group "allow pages" setting check |
+| Page inbox (Meta Business Suite) | PASS | 2026-10-15: page inbox reached via the message notification deep link (business.facebook.com/latest/inbox); account owner's message read; in-character reply sent and rendered in thread ("You: POGO CONFIRM...") with timestamps |
+| Page in group | PASS | 2026-10-15: after the account owner enabled "allow pages", the page requested to join the private group; membership approved; Pogo Porropogon renders as the 5th member of the members list |
 
 ## Blockers
 
-- Profile session wedged (blank 2FA checkpoint) as of 2026-10-15
-  ~23:40 UTC. Page-flow live testing resumes when the session clears
-  (user touch of the visible browser has resolved wedges before).
-- Page-flow testing needs the parent profile logged in and the test
-  page available; both exist; only the session gate is down.
+- None currently. The session wedge (2026-10-15) was cleared by a human
+  touch of the visible browser and the full page battery then ran.
+- Remaining optional validations: reaction-swap and share-sheet under
+  automation (known quirks, not page-specific); engage-loop live run
+  with a human partner (cadence test, not a page feature).
 
 ## Test partner
 

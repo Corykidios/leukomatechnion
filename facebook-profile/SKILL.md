@@ -133,8 +133,8 @@ PASS. Timeline post (422 chars, multi-pass): PASS. Post edit: PASS
 (Edit stamp renders). Comment: PASS. Comment edit: PASS ("Edited"
 stamp). Bio (101 limit): PASS. Cover upload: PASS. Basic Like: PASS.
 Reaction picker render: PASS. Love swap: UNVERIFIED (automation
-quirk). Share: CANDIDATE (button present; sheet resisted synthetic
-clicks). Group join, group post, group chat, admin accept, admin
+quirk, shared with pages). Share: CANDIDATE (button present; sheet
+resisted synthetic clicks). Group join, group post, group chat, admin accept, admin
 console: PASS. 1:1 and group messages: PASS with grep-verification.
 Wedge protocol: PASS over a 14-firing wedge (no forced actions, clean
 recovery after clearance).
